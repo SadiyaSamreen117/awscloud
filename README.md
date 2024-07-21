@@ -43,3 +43,43 @@ sample output:
 }
 
 ~~~
+
+The above command shows the VPC state in pending,to check the VPC state later,please use the below command:
+
+~~~
+aws ec2 describe-vpcs --vpc-ids <vpc-id>
+~~~
+
+sample output:
+~~~
+aws ec2 describe-vpcs --vpc-ids vpc-0bf65d5df2209441d
+
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "10.0.0.0/16",
+            "DhcpOptionsId": "dopt-0c954d5a3d9647919",
+            "State": "available",
+            "VpcId": "vpc-0bf65d5df2209441d",
+            "OwnerId": "12345678912",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-08ccc642b80a25da4",
+                    "CidrBlock": "10.0.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "MyVpc"
+                }
+            ]
+        }
+    ]
+}
+~~~
