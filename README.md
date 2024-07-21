@@ -15,30 +15,31 @@ sample output:
 
 ~~~
  {
-       "Vpc": {
-           "CidrBlock": "10.0.0.0/16",
-           "DhcpOptionsId": "dopt-5EXAMPLE",
-           "State": "pending",
-           "VpcId": "vpc-0a60eb65b4EXAMPLE",
-           "OwnerId": "12345678910",
-           "InstanceTenancy": "default",
-           "Ipv6CidrBlockAssociationSet": [],
-           "CidrBlockAssociationSet": [
-               {
-                   "AssociationId": "vpc-cidr-assoc-07501b79ecEXAMPLE",
-                   "CidrBlock": "10.0.0.0/16",
-                   "CidrBlockState": {
-                       "State": "associated"
-                   }
-               }
-           ],
-           "IsDefault": false,
-           "Tags": [
-               {
-                   "Key": "Name",
-                   "Value": MyVpc"
-               }
-           ]
-       }
-   }
+    "Vpc": {
+        "CidrBlock": "10.0.0.0/16",
+        "DhcpOptionsId": "dopt-0c954d5a3d9647919",
+        "State": "pending",
+        "VpcId": "vpc-02bffcb50ac5f9585",
+        "OwnerId": "12345678912",
+        "InstanceTenancy": "default",
+        "Ipv6CidrBlockAssociationSet": [],
+        "CidrBlockAssociationSet": [
+            {
+                "AssociationId": "vpc-cidr-assoc-09332dda6f059df6c",
+                "CidrBlock": "10.0.0.0/16",
+                "CidrBlockState": {
+                    "State": "associated"
+                }
+            }
+        ],
+        "IsDefault": false,
+        "Tags": [
+            {
+                "Key": "Name",
+                "Value": "MyVpc"
+            }
+        ]
+    }
+}
+
 ~~~
