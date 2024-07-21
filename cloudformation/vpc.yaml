@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: >
-  This template creates VPC in us-east-1 region 
+  This template creates a VPC in the us-east-1 region.
   Author: Sadiya
   Company: test
 Resources:
@@ -9,9 +9,9 @@ Resources:
     Properties:
       CidrBlock: "10.0.0.0/16"
       Tags:
-      - Key: Name
-        Value: MyProdVPC
-      - Key: Env
-        Value: Prod
-      - Key: Department
-        Value: DevOps
+        - Key: Name
+          Value: MyProdVPC
+        - Key: Env
+          Value: Prod
+        - Key: Department
+          Value: DevOps
