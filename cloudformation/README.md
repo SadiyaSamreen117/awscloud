@@ -8,7 +8,7 @@
 
    2.We can create a stack using GitBash
 
-Lets ,first create a stack using CloudFormation service in AWS 
+## Lets ,first create a stack using CloudFormation service in AWS 
 
 The following is the template to create a stack 
 
@@ -30,6 +30,12 @@ Resources:
           Value: Prod
         - Key: Department
           Value: DevOps
+~~~
 
-~~~          
+After creatng a template go to AWS console and search for CloudFormation service and click create stack 
+
+Then select respective sections and upload the created template 
+
+
+         
 
