@@ -12,11 +12,26 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - uses: aws-actions/configure-aws-credentials@v2
+        
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
          aws-region: us-east-1
-      - run: aws cloudformation continue-update-rollback --stack-name prod-vpc 
-      - run: sleep 20
-      - run: aws cloudformation describe-stack-events --stack-name prod-vpc
+         
+      - name: Continue Update Rollback
+        run: aws cloudformation continue-update-rollback --stack-name prod-vpc
+
+      - name: Wait for rollback to continue
+        run: sleep 30
+        
+      - name: Describe Stack Events
+        id: describe-events
+        run: aws cloudformation describe-stack-events --stack-name prod-vpc
+        
+      - name: Print Stack Events for Debugging
+        run: echo "${{ steps.describe-events.outputs.stack-events }}"
+        
+      - name: Describe Stack Status
+        run: aws cloudformation describe-stacks --stack-name prod-vpc
