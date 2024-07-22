@@ -6,13 +6,15 @@
 
    1.We can create a stack using CloudFormation service in AWS
 
-   2.We can create a stack using GitBash
+   2.We can create a stack using GitBash by running the necessary commands
 
 ## Lets ,first create a stack using CloudFormation service in AWS 
 
-we can create this template in json and yaml format 
+We can create this template in both JSON and YAML formats to ensure compatibility with various configuration management tools.
 
-The following is the template to create a stack:
+Create a yaml file with the name vpc.yaml
+
+The following is the template to create a stack in YAML format:
 
 ~~~
 AWSTemplateFormatVersion: "2010-09-09"
@@ -37,6 +39,8 @@ Resources:
 After creatng a template go to AWS console and search for CloudFormation service and click 'create stack'
 
 Then select respective sections and upload the created template 
+
+The above steps creates a stack in CloudFormation service in AWS
 
 
          
