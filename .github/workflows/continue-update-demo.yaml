@@ -35,3 +35,6 @@ jobs:
         
       - name: Describe Stack Status
         run: aws cloudformation describe-stacks --stack-name prod-vpc
+        
+      - name: Update Stack
+        run: aws cloudformation update-stack --stack-name prod-vpc --template-body file://cloudformation/vpc.yaml
