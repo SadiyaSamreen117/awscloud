@@ -19,4 +19,4 @@ jobs:
          aws-region: us-east-1
       - run: aws cloudformation create-stack --stack-name prod-vpc-new --template-body=file://cloudformation/vpc.yaml
       - run: sleep 20
-      - run: aws cloudformation describe-stack-events --stack-name prod-vpc-new
+      - run: aws cloudformation describe-stack-events --stack-name prod-vpc
