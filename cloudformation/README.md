@@ -43,5 +43,10 @@ Resources:
 * The above steps creates a stack in CloudFormation service in AWS
 
 
+## Now lets create a stack using GitBash
+
+
+
+
          
 
