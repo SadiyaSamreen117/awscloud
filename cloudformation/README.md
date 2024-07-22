@@ -10,7 +10,9 @@
 
 ## Lets ,first create a stack using CloudFormation service in AWS 
 
-The following is the template to create a stack 
+we can create this template in json and yaml format 
+
+The following is the template to create a stack:
 
 ~~~
 AWSTemplateFormatVersion: "2010-09-09"
@@ -32,7 +34,7 @@ Resources:
           Value: DevOps
 ~~~
 
-After creatng a template go to AWS console and search for CloudFormation service and click create stack 
+After creatng a template go to AWS console and search for CloudFormation service and click 'create stack'
 
 Then select respective sections and upload the created template 
 
