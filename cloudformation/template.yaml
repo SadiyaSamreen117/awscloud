@@ -23,3 +23,13 @@ Resources:
       Tags: 
         - Key: Name
           Value: MyIGW
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  AWS Cloudformation template to create AttachGateway
+Resources:
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties: 
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref InternetGateway
