@@ -3,20 +3,21 @@ Description: >
   This template creates VPC in us-east-1 region
   Author: Sadiya
   Company: test
+
 Resources:
   MyCfnVPC:
     Type: AWS::EC2::VPC
     Properties:
-       CidrBlock: "10.0.0.0/16"
-       Tags:
-       - Key: Name
-         Value: MyVPC
-       - Key: Env 
-         Value: Prod
-       - Key: Department
-         Value: DevOps  
+      CidrBlock: "10.0.0.0/16"
+      Tags:
+        - Key: Name
+          Value: MyVPC
+        - Key: Env
+          Value: Prod
+        - Key: Department
+          Value: DevOps
 
-MyCfnInternetGateway:
+  MyCfnInternetGateway:
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
