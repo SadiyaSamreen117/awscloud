@@ -49,3 +49,11 @@ Resources:
       Tags: 
         - Key: Name
           Value: PrivateSubnet 
+
+  PublicRouteTable:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: vpc-0522b23e14b1638de
+      Tags: 
+        - Key: Name
+          Value: PublicRouteTable
