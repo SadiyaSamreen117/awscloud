@@ -40,7 +40,7 @@ Resources:
         - Key: Name
           Value: PublicSubnet  
 
-   MyCfnPrivateSubnet:
+  MyCfnPrivateSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: vpc-0522b23e14b1638de
