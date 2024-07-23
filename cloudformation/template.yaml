@@ -14,4 +14,12 @@ Resources:
        - Key: Env 
          Value: Prod
        - Key: Department
-         Value: DevOps        
+         Value: DevOps  
+
+MyCfnInternetGateway:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties:
+      Tags:
+        - Key: Name
+          Value: MyIGW
+  
