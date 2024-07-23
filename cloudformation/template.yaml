@@ -12,3 +12,10 @@ Resources:
       Tags:
         - Key: Name
           Value: MyVPC
+
+InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties: 
+      Tags: 
+        - Key: Name
+          Value: MyIGW
