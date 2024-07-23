@@ -10,10 +10,8 @@ Resources:
       CidrBlock: "10.0.0.0/16"
       Tags:
         - Key: Name
-          Value: MyStageVPC
+          Value: MyProdVPC
         - Key: Env
           Value: Prod
         - Key: Department
           Value: DevOps
-        - Key: Region
-          Value: IAD
