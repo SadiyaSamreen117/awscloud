@@ -34,8 +34,18 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: vpc-0522b23e14b1638de
-      CidrBlock: '10.0.0.0/16'
+      CidrBlock: '10.0.1.0/24'
       AvailabilityZone: us-east-1d
       Tags: 
         - Key: Name
           Value: PublicSubnet  
+
+   MyCfnPrivateSubnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: vpc-0522b23e14b1638de
+      CidrBlock: '10.0.2.0/24'
+      AvailabilityZone: us-east-1d
+      Tags: 
+        - Key: Name
+          Value: PrivateSubnet 
