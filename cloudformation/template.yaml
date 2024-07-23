@@ -17,7 +17,7 @@ Resources:
         - Key: Department
           Value: DevOps
 
-  MyCfnInternetGateway:
+MyCfnInternetGateway:
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
