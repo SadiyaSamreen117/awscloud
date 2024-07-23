@@ -13,7 +13,11 @@ Resources:
         - Key: Name
           Value: MyVPC
 
-InternetGateway:
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  AWS CloudFormation Template to create IGW
+Resources:
+  InternetGateway:
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags: 
