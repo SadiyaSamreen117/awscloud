@@ -35,7 +35,7 @@ Resources:
     Properties:
       VpcId: vpc-0522b23e14b1638de  
       CidrBlock: '10.0.1.0/24'
-      AvailabilityZone: us-east-1
+      AvailabilityZone: us-east-1a
       Tags: 
         - Key: Name
           Value: PublicSubnet  
@@ -45,7 +45,7 @@ Resources:
     Properties:
       VpcId: vpc-0522b23e14b1638de
       CidrBlock: '10.0.2.0/24'
-      AvailabilityZone: us-east-1
+      AvailabilityZone: us-east-1a
       Tags: 
         - Key: Name
           Value: PrivateSubnet 
@@ -69,12 +69,14 @@ Resources:
   PublicRoute:
     Type: 'AWS::EC2::Route'
     Properties:
-      RouteTableId: rtb-0145c2507064c9e1f
+      RouteTableId: rtb-04e3dfaf36721c261
       DestinationCidrBlock: '0.0.0.0/0'
       GatewayId: igw-0124fbcbe44575b79
 
   NatGatewayEIP:
     Type: 'AWS::EC2::EIP'
     Properties:
-      Domain: vpc 
+      Domain: vpc
+      
+  
         
