@@ -27,5 +27,5 @@ Resources:
   MyCfnAttachGateway:
     Type: AWS::EC2::VPCGatewayAttachment
     Properties:
-      VpcId: !Ref MyCfnVPC
-      InternetGatewayId: !Ref MyCfnInternetGateway
+      VpcId: vpc-0522b23e14b1638de
+      InternetGatewayId: igw-0124fbcbe44575b79
