@@ -66,4 +66,10 @@ Resources:
         - Key: Name
           Value: PrivateRouteTable 
 
+  PublicRoute:
+    Type: 'AWS::EC2::Route'
+    Properties:
+      RouteTableId: rtb-0145c2507064c9e1f
+      DestinationCidrBlock: '0.0.0.0/0'
+      GatewayId: igw-0124fbcbe44575b79
         
