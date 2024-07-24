@@ -15,21 +15,18 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
-      - name: Configure AWS credentials
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Update CloudFormation stack
-        run: aws cloudformation update-stack --stack-name subnet-vpc --template-body file://cloudformation/template.yaml
+      - name: Update CloudFormation Stack
+        run: aws cloudformation update-stack --stack-name subnet-vpc --template-body file://cloudformation/template.yaml --capabilities CAPABILITY_IAM
 
-      - name: Wait for stack creation to complete
-        run: |
-          echo "Waiting for stack creation to complete..."
-          aws cloudformation wait stack-create-complete --stack-name subnet-vpc
+      - name: Wait for Stack Update
+        run: aws cloudformation wait stack-update-complete --stack-name subnet-vpc
 
-      - name: Describe CloudFormation stack events
+      - name: Describe Stack Events
         run: aws cloudformation describe-stack-events --stack-name subnet-vpc
-
