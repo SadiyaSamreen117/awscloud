@@ -32,3 +32,4 @@ jobs:
 
       - name: Describe CloudFormation stack events
         run: aws cloudformation describe-stack-events --stack-name subnet-vpc
+
