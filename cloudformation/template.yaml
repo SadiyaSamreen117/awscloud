@@ -109,7 +109,3 @@ Resources:
     Properties:
       SubnetId: subnet-01d3c72367a7a5cdd
       RouteTableId: rtb-0b4f0ecef5bd8c6c0  
-
-
-
-  
