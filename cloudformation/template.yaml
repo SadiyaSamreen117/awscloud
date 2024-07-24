@@ -78,3 +78,15 @@ Resources:
     Properties:
       Domain: vpc 
 
+  NatGateway:
+    Type: 'AWS::EC2::NatGateway'
+    Properties:
+      AllocationId: 
+        Fn::GetAtt: 
+          - NatGatewayEIP
+          - AllocationId
+      SubnetId: subnet-0b304e3d06c0fda3f
+      Tags: 
+        - Key: Name
+          Value: MyNATGateway 
+
