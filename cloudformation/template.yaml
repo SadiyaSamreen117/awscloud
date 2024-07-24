@@ -31,24 +31,25 @@ Resources:
       InternetGatewayId: igw-0124fbcbe44575b79
 
   MyCfnPublicSubnet:
-    Type: 'AWS::EC2::Subnet'
+    Type: AWS::EC2::Subnet
     Properties:
       VpcId: vpc-0522b23e14b1638de
       CidrBlock: '10.0.1.0/24'
-      AvailabilityZone: us-east-1d
-      Tags: 
+      AvailabilityZone: us-east-1a
+      MapPublicIpOnLaunch: true
+      Tags:
         - Key: Name
           Value: PublicSubnet  
 
   MyCfnPrivateSubnet:
-    Type: 'AWS::EC2::Subnet'
+    Type: AWS::EC2::Subnet
     Properties:
       VpcId: vpc-0522b23e14b1638de
       CidrBlock: '10.0.2.0/24'
-      AvailabilityZone: us-east-1d
-      Tags: 
+      AvailabilityZone: us-east-1b
+      Tags:
         - Key: Name
-          Value: PrivateSubnet 
+          Value: PrivateSubnet
 
   PublicRouteTable:
     Type: 'AWS::EC2::RouteTable'
@@ -66,27 +67,4 @@ Resources:
         - Key: Name
           Value: PrivateRouteTable 
 
-  PublicRoute:
-    Type: 'AWS::EC2::Route'
-    Properties:
-      RouteTableId: rtb-020d66b12c1cdf7d7
-      DestinationCidrBlock: '0.0.0.0/0'
-      GatewayId: igw-0124fbcbe44575b79
-
-  NatGatewayEIP:
-    Type: 'AWS::EC2::EIP'
-    Properties:
-      Domain: vpc 
-
-  NatGateway:
-    Type: 'AWS::EC2::NatGateway'
-    Properties:
-      AllocationId: 
-        Fn::GetAtt: 
-          - NatGatewayEIP
-          - AllocationId
-      SubnetId: subnet-0b304e3d06c0fda3f
-      Tags: 
-        - Key: Name
-          Value: MyNATGateway 
-
+  
