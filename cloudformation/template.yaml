@@ -89,7 +89,14 @@ Resources:
       SubnetId: subnet-0ea8fbfbc1309cb64
       Tags: 
         - Key: Name
-          Value: MyNATGateway 
+          Value: MyNATGateway
+
+   PrivateRoute:
+    Type: 'AWS::EC2::Route'
+    Properties:
+      RouteTableId: rtb-0b4f0ecef5bd8c6c0
+      DestinationCidrBlock: '0.0.0.0/0'
+      NatGatewayId: nat-01847dc89797c93f4
 
 
 
