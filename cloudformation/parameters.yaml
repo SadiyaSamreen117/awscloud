@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  This template creates VPC in us-east-1 region 
+  Author: Sadiya
+  Company: test
+
+Parameters:
+  VpcCidrBlock: 
+    Description: CIDR Block for the VPC 
+    Type: String
+    Default: "192.168.0.0/16"
+    AllowedPattern: "^([0-9]{1,3}\.){3}[0-9]{1,3}\/([8-9]|[1-2][0-9]|3[0-2])$"
+    ConstraintDescription: "Must be a valid CIDR range."
+
+   Tags:
+     - key: VpcCidrBlock
+       Value: "192.168.0.0/16"
+     - Key: Env
+       Value: Prod
+     - Key: Department
+       Value: DevOps 
+  
+Resources:
+ MyCfnVPC:
+   Type: AWS::EC2::VPC
+   Properties:
+     CidrBlock: "192.168.0.0/16"
+     Tags:
+       - Key: Name
+         Value: MyProdVPC
+       - Key: Env
+         Value: Prod
+       - Key: Department
+         Value: DevOps
