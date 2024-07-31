@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  This template creates a VPC in the us-east-1 region.
+  Author: Sadiya
+  Company: test
+
+Parameters:
+  VpcCidrBlock:
+    Description: "CIDR block for the VPC"
+    Type: String
+    Default: "192.168.0.0/16"
+    AllowedPattern: "(^([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}$)"
+    ConstraintDescription: "Must be a valid CIDR range."
+
+  EnvTag:
+    Description: "Environment tag for the VPC"
+    Type: String
+    Default: "Prod"
+
+  DepartmentTag:
+    Description: "Department tag for the VPC"
+    Type: String
+    Default: "DevOps"
+
+  RegionTag:
+    Description: "Region tag for the VPC"
+    Type: String
+    Default: "IAD"
