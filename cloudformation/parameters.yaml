@@ -26,3 +26,16 @@ Parameters:
     Description: "Region tag for the VPC"
     Type: String
     Default: "IAD"
+
+Resources:
+  MyCfnVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: "192.168.0.0/16"
+      Tags:
+        - Key: Name
+          Value: MyProdVPC
+        - Key: Env
+          Value: Prod
+        - Key: Department
+          Value: Devops
