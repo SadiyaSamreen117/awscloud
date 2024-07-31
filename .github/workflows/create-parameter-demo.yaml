@@ -17,6 +17,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      - run: aws cloudformation create-stack --stack-name my-stack --template-body=file://cloudformation/parameters.yaml --parameters 
+      - run: aws cloudformation create-stack --stack-name my-stack --template-body=file://cloudformation/parameters.yaml --parameters ParameterKey=VpcCidrBlock,ParameterValue=192.168.1.0/24 ParameterKey=EnvTag,ParameterValue=Prod ParameterKey=DepartmentTag,ParameterValue=DevOps
       - run: sleep 20
-      - run: aws cloudformation describe-stack-events --stack-name my-stackParameterKey=VpcCidrBlock,ParameterValue=192.168.1.0/24 ParameterKey=EnvTag,ParameterValue=Prod ParameterKey=DepartmentTag,ParameterValue=DevOps
+      - run: aws cloudformation describe-stack-events --stack-name my-stack
