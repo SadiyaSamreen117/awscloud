@@ -12,8 +12,8 @@ pwd
 ~~~
 
 example:
-       > [root@localhost ~]# pwd
-       > /root 
+> [root@localhost ~]# pwd
+> /root 
 
 3. The below command helps to navigate through directories.
 ~~~
