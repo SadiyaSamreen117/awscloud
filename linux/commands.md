@@ -5,3 +5,8 @@
 ~~~
 ls
 ~~~
+
+2. The below command allows you to print the current working directory on your terminal.
+~~~
+pwd
+~~~
