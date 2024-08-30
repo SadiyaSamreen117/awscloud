@@ -11,25 +11,16 @@ ls
 pwd
 ~~~
 
-    example:
-    [root@localhost ~]# pwd<br>/root
-
 3. The below command helps to navigate through directories.
 ~~~
 cd
 ~~~
 
-    example: 
-    [root@localhost ~]# cd file2/<br>[root@localhost file2]# 
-    
 4. The below command allows you to create directories from within the terminal.
 ~~~
 mkdir
 ~~~
-
-    example: 
-    [root@localhost ~]# mkdir john<br>[root@localhost ~]# ls<br>file2 
-    
+ 
 5. The below commands are equivalent to the copy-paste and cut-paste commands in Windows.We also use the mv command to rename files and folders.
 ~~~
 cp
@@ -38,6 +29,3 @@ cp
 ~~~
 mv
 ~~~
-
-    example: 
-    [root@localhost ~]# cp < source > < destination >
