@@ -33,7 +33,7 @@ example: [root@localhost ~]# **cd < directory path >**
 mkdir
 ~~~
 
-example: [root@localhost ~]# mkdir < folder name >
+example: [root@localhost ~]# **mkdir < folder name >**
 
         [root@localhost ~]# mkdir john
         
@@ -48,7 +48,7 @@ cp
 mv
 ~~~
 
-example: [root@localhost ~]# cp < source > < destnation >
+example: [root@localhost ~]# **cp < source > < destnation >**
 
          [root@localhost ~]# cp apple banana 
 
@@ -56,6 +56,37 @@ example: [root@localhost ~]# cp < source > < destnation >
         
          [root@localhost ~]# mv apple banana 
          
-        
-        
+6.The below command is used to delete files.
+~~~
+rm
+~~~
+
+example: [root@localhost ~]# **rm < file name >**
+
+         [root@localhost ~]# rm file2
+
+- To delete a directory, you must add the -r argument to it. Without the -r argument, the rm command won’t delete directories.
+
+        [root@localhost ~]# rm -r <folder/directory name>
+
+7.The touch command in Linux creates an empty file or updates the timestamp of an existing file.
+~~~
+touch
+~~~
+
+example: [root@localhost ~]# **touch < file name >**
+  
+         [root@localhost ~]# touch Linux
+
+8.The below command in Linux clears the terminal screen. It removes all the text and output currently displayed on the terminal and gives you a clean slate to work with.
+~~~
+clear
+~~~
+
+example: [root@localhost ~]# clear
+
+
+
+         
+
        
