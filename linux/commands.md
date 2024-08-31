@@ -10,6 +10,7 @@ ls
 ~~~
 pwd
 ~~~
+
 example:
 
         [root@localhost ~]# pwd
