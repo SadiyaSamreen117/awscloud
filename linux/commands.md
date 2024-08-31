@@ -22,7 +22,7 @@ example:
 cd
 ~~~
 
-example: [root@localhost ~]# cd < directory path >
+example: [root@localhost ~]# **cd < directory path >**
         
         [root@localhost ~]# cd file2/
 
