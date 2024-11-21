@@ -1,4 +1,4 @@
-# Install Terraform
+# Terraform Installation 
 
 ## Windows
 
@@ -11,6 +11,7 @@
 ## macOS
 
 - Follow the steps provided in the Downloads [ page ](https://developer.hashicorp.com/terraform/install)
+
 
 
 # Settingup Terraform for AWS 
