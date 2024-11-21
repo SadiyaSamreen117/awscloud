@@ -23,3 +23,10 @@ Before the advent of IaC, infrastructure management was typically a manual and t
 IaC addresses these challenges by providing a systematic, automated, and code-driven approach to infrastructure management. Popular IaC tools include Terraform, AWS CloudFormation, Azure Resource Manager templates others.
 
 These tools enable organizations to define, deploy, and manage their infrastructure efficiently and consistently, making it easier to adapt to the dynamic needs of modern applications and services.
+
+
+# Getting Started With Terraform 
+
+To get started with Terraform, it's important to understand some key terminology and concepts. Here are some fundamental terms and explanations.
+
+1. ==Provider:== A provider is a plugin for Terraform that defines and manages resources for a specific cloud or infrastructure platform. Examples of providers include AWS, Azure, Google Cloud, and many others. You configure providers in your Terraform code to interact with the desired infrastructure platform.
