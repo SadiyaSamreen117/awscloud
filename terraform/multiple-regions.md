@@ -1,4 +1,4 @@
-## Multiple regions in terraform
+## Multiple Regions in Terraform
 
 we can create multiple regions in terraform by using `alias` keyword.
 
