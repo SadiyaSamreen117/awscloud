@@ -1,1 +1,1 @@
-## Varaibles 
+## Varaibles of Terraform
