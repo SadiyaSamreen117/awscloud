@@ -85,6 +85,8 @@ clear
 
 example: [root@localhost ~]# clear
 
+9.The bwlow command 
+
 
 
          
