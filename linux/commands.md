@@ -85,7 +85,10 @@ clear
 
 example: [root@localhost ~]# clear
 
-9.The bwlow command is used
+9.The bwlow command is used when you want to output the contents of a file or print anything to the terminal output, we use the cat or echo commands. Let’s see their basic usage.
+~~~
+cat , echo
+~~~
 
 
 
