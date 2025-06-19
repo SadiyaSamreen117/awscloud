@@ -1,6 +1,6 @@
-## Varaibles of Terraform
+# Varaibles of Terraform
 
-# Input Varaibles 
+## Input Varaibles 
 
 Input variables allow you to customize your infrastructure deployments by passing values from outside the configuration. They act as parameters that can be set before running Terraform commands like terraform plan or terraform apply, enabling dynamic resource configuration without modifying the core Terraform code. Essentially, they make your configurations reusable and adaptable to different environments. 
 
@@ -28,7 +28,7 @@ resource "example_resource" "example" {
 }
 ~~~
 
-# Output Variables
+## Output Variables
 
 Output variables are used to expose specific data or attributes of your infrastructure after it has been provisioned. They allow you to retrieve and utilize information, such as IP addresses, DNS names, or resource IDs, generated during the infrastructure deployment process. Essentially, they act as return values for Terraform modules, enabling you to share data between modules, interact with external systems, or simply display useful information in the console. 
 
