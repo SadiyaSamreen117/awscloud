@@ -14,10 +14,10 @@ variable "example_var" {
 
 In the above example
 
-- variable is used to declare an input variable named 'example_var'
-- 'description' provides a human-readable description of the variable.
-- 'type' specifies the data type of the variable (e.g., string, number, list, map, etc.).
-- 'default' provides a default value for the variable, which is optional.
+- variable is used to declare an input variable named `example_var`.
+- `description` provides a human-readable description of the variable.
+- `type` specifies the data type of the variable (e.g., string, number, list, map, etc.).
+- `default` provides a default value for the variable, which is optional.
 
 Below is the example to use the input variable within your module or configuration:
 
@@ -41,9 +41,9 @@ output "example_output" {
 
 In the above example
 
-- output is used to declare an output variable named 'example_output'.
-- 'description' provides a description of the output variable.
-- 'value' specifies the value that you want to expose as an output variable. This value can be a         resource attribute, a computed value, or any other expression.
+- output is used to declare an output variable named `example_output`.
+- `description` provides a description of the output variable.
+- `value` specifies the value that you want to expose as an output variable. This value can be a         resource attribute, a computed value, or any other expression.
 
 For example, if you have an output variable named example_output in a module called example_module, you can access it in the root module like this:
 
