@@ -26,29 +26,29 @@ sudo apt-get update
 sudo apt-get install jenkins
 ~~~
 
-STEP-4: Start Jenkins
+## STEP-4: Start Jenkins
 
 ~~~
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 ~~~
 
-STEP-5: Verify Jenkins
+## STEP-5: Verify Jenkins
 
 ~~~
 sudo systemctl status jenkins
 ~~~
 
-STEP-6 : Open jenkins server in browser using VM public ip
+## STEP-6 : Open jenkins server in browser using VM public ip
 
 ~~~
 http://public-ip:8080/
 ~~~
 
-STEP-7 : Copy jenkins admin pwd
+## STEP-7 : Copy jenkins admin pwd
 
 ~~~
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ~~~
 
-STEP-8 : Create Admin Account & Install Required Plugins in Jenkins
+## STEP-8 : Create Admin Account & Install Required Plugins in Jenkins
