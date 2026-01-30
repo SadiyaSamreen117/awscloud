@@ -2,8 +2,6 @@
 
 ## Setup MySql DB Server on AWS EC2 Instance (Ubuntu)
 
-## Setup MySql DB Server on AWS EC2 Instance (Ubuntu)
-
 ## Step-1: Create AWS EC2 VM using Ubuntu AMI & Connect to it using MobaXterm
 
 ## Step-2: Update the system
@@ -39,9 +37,9 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'place-yo
 ## Step-7: Test the MySql server if it is working by running sample sql queries
 
 ~~~
-CREATE DATABASE ;
+CREATE DATABASE employee;
 
-USE List;
+USE employee;
 
 CREATE TABLE emp (id INT, name VARCHAR(45));
 
