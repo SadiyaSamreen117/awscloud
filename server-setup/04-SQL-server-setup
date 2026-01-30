@@ -1,10 +1,10 @@
-# SQL Server Setup
+ # SQL Server Setup
 
-## Setup MySql DB Server on AWS EC2 Instance (Ubuntu)
+ ## Setup MySql DB Server on AWS EC2 Instance (Ubuntu)
 
-## Step-1: Create AWS EC2 VM using Ubuntu AMI & Connect to it using MobaXterm
+ ## Step-1: Create AWS EC2 VM using Ubuntu AMI & Connect to it using MobaXterm
 
-## Step-2: Update the system
+ ## Step-2: Update the system
 
 ~~~
 sudo apt update
