@@ -1,3 +1,6 @@
+# Jenkins pipeline script
+
+~~~
 pipeline {
     agent { label 'slave1' }
 
@@ -21,3 +24,4 @@ pipeline {
         }
     }
 }
+~~~
