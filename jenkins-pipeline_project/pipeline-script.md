@@ -20,6 +20,7 @@ pipeline {
         stage('Deploy to Target Server - QA Testing') {
             steps {
                 echo 'Perform Application Deployment to Target - Tomcat Server'
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'Tomcat_server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/demo-1.0-SNAPSHOT.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
             }
         }
     }
