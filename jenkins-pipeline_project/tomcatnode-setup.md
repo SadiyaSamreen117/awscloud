@@ -61,6 +61,7 @@ chown -R devopsadmin /opt/tomcat
 ~~~
 
 ## Install Publish Over SSH Plugin in Jenkins Master.
+
 ## Publish Over SSH Plugin is used to copy the artifacts from Jenkins Slave Node to Tomcat Server
 
 ## Login to Jenkins - Manage Jenkins - System - Attach the Tomcat Node to jenkins Master
